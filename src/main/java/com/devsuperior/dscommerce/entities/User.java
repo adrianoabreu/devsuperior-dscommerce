@@ -22,7 +22,7 @@ public class User {
 	private Long id;
 	private String name;
 	
-	@Column(unique = true) //Defini campo email com valor unico.
+	@Column(unique = true) //Define campo email com valor unico.
 	private String email;
 	private String phone;
 	private LocalDate birthDate;
