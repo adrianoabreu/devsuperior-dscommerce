@@ -122,7 +122,7 @@ public class User implements UserDetails {
     }
     
     /*Metodo que retorna verdadeiro ou falso para nome de perfil(role) de usuário informado.
-      A ideia é saber se o usuário possui o perfil informado ou não.
+      A ideia é saber se o usuário possui o perfil informado ou não. ROLE_ADMIN ou ROLE_CLIENT
     */
     public boolean hasRole(String roleName) {
     	for(Role role : roles) {
@@ -132,6 +132,8 @@ public class User implements UserDetails {
     	}
     	return false;
     }
+    
+    
 	
 	@Override
 	public int hashCode() {
