@@ -113,7 +113,11 @@ public class User implements UserDetails {
 		return orders;
 	}
 
-    public void addRole(Role role) {
+    public Set<Role> getRoles() {
+		return roles;
+	}
+
+	public void addRole(Role role) {
     	roles.add(role);
     }
     
