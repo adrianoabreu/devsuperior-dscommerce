@@ -31,6 +31,10 @@ html, body {
     background-color: var(--dsc-color-bg-primary);
 }
 
+main {
+    padding: 0 20px;
+}
+
 /*---------------------------------------------------------*/
 /* generic styles */
 
@@ -52,6 +56,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
 }
 
 a, a:hover {
@@ -94,9 +99,16 @@ nav a{
 /* button styles */
 
 .dsc-btn-page-container {
-    width: 220px;
+    width: 100%;
     display: grid;
     grid-gap: 20px;
+}
+
+/* Configuração de comportamento da tela de acordo com largura minima estabelecida */
+@media (min-width: 576px){
+    .dsc-btn-page-container {
+        width: 220px;
+    }
 }
 
 .dsc-btn {
