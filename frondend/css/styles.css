@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root {
+  --dsc-color-bg-primary: #e8e8e8;
+  --dsc-color-bg-secondary: #ffe500;
+  --dsc-color-bg-tertiary: #636363;
+  --dsc-color-bg-quaternary: #0caf1d;
+
+  --dsc-color-card-bg: #fff;
+  --dsc-color-card-border: #d9d9d9;
+
+  --dsc-color-btn-primary: #3483fa;
+  --dsc-color-btn-inverse: #fff;
+
+  --dsc-color-font-primary: #636363;
+  --dsc-color-font-secondary: #0caf1d;
+  --dsc-color-font-tertiary: #fff;
+  --dsc-color-font-placeholder: #d9d9d9;
+
+  --dsc-color-error: #f33;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,11 +28,11 @@
 }
 
 html, body {
-    background-color: #E8E8E8;
+    background-color: var(--dsc-color-bg-primary);
 }
 
 header {
-    background-color: #FFE500;
+    background-color: var(--dsc-color-bg-secondary);
     height: 70px;
     display: flex;
     align-items: center;
@@ -25,7 +45,7 @@ a, a:hover {
 
 nav {
 /*    border: 1px solid red; */
-    color: #636363;
+    color: var(--dsc-color-font-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,13 +58,14 @@ nav {
 }
 
 .card {
-    border: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+    border: 1px solid var(--dsc-color-card-border);
     border-radius: 4px;
-    background-color: #fff;
+    background-color: var(--dsc-color-card-bg);
 }
 
 .line-bottom {
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
 .btn-page-container {
@@ -61,18 +82,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3483FA;
+    background-color: var(--dsc-color-btn-primary);
 }
 
 .btn-blue {
-    background-color: #3483FA;
-    color: #fff;
+    background-color: var(--dsc-color-btn-primary);
+    color: var(--dsc-color-btn-inverse);
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #3483FA;
-    border: 1px solid #3483FA;
+    background-color: var(--dsc-color-btn-inverse);
+    color: var(--dsc-color-btn-primary);
+    border: 1px solid var(--dsc-color-btn-primary);
 }
 
 
